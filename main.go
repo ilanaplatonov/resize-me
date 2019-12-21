@@ -22,7 +22,7 @@ func main() {
 
 	http.HandleFunc("/thumbnail", resizeImage)
 	http.HandleFunc("/", handleUnknown)
-	if err := http.ListenAndServe(os.Getenv("PORT"), nil); err != nil {
+	if err := http.ListenAndServe(":" + os.Getenv("PORT"), nil); err != nil {
 		panic(err)
 	}
 }
