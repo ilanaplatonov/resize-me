@@ -19,4 +19,4 @@ WORKDIR /app
 RUN useradd -m heroku
 USER heroku
 CMD /app/bin/ilanaplatonov
-EXSPOSE 8080
+EXPOSE 8080
